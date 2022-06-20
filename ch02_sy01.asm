@@ -4,7 +4,7 @@ code segment
          mov ax,0ffffh
          mov ds,ax
         ; 单步执行，ss\sp指令是一起执行的
-        ; 同时栈种会保存一些cs\ip寄存器的信息
+        ;
          mov ax,2200h
          mov ss,ax
          mov sp,0100h
