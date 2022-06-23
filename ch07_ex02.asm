@@ -23,8 +23,6 @@ codes segment
           mov    ds:[bx+5],dl
           inc    bx
           loop   s
-
-    
           mov    ah, 4ch
           int    21h
 codes ends
