@@ -29,6 +29,7 @@ codes segment
                         int    21h
         
     function_trans:     
+                    ; 子程序将用到的寄存器入栈
                         push   si
                         push   cx
     function_trans_loop:
@@ -40,6 +41,7 @@ codes segment
                         jmp    short function_trans_loop
 
     function_trans_end: 
+                    ; 子程序将用到的寄存器恢复
                         pop    cx
                         pop    si
                         ret
