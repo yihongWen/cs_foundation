@@ -49,7 +49,5 @@ codes segment
                       int    21h
 
     interrupt_0_end:  nop
-                      mov    ah, 4ch
-                      int    21h
 codes ends
 end start
