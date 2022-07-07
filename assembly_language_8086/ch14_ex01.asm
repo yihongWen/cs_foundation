@@ -1,5 +1,6 @@
 ; 1、向cmos ram中的2号单元写入数据以及读取数据
 ; 端口：70h\71h  in out
+; 写入数据为6但是读取的数据并不是6，且多次读取的数据是同样的
 
 codes segment
           assume cs:codes

@@ -1,3 +1,4 @@
+;实验13，分别在屏幕的2、4、6、8行显示4句英文诗，补全程序
 assume cs:codesg
 codesg segment
     s1:    db   'Good,better,best,$'
@@ -9,15 +10,15 @@ codesg segment
 
     start: 
 
-           mov  ax,0b800h
-           mov  es,ax
-           mov  bx,0
-           mov  cx,2000
-           mov  ax,0
-    clear: 
-           mov  es:[bx],ax
-           add  bx,2
-           loop clear
+    ;        mov  ax,0b800h
+    ;        mov  es,ax
+    ;        mov  bx,0
+    ;        mov  cx,2000
+    ;        mov  ax,0
+    ; clear: 
+    ;        mov  es:[bx],ax
+    ;        add  bx,2
+    ;        loop clear
                   
            mov  ax,cs
            mov  ds,ax
